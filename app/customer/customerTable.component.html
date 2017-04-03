@@ -8,8 +8,8 @@
          <input type="text" [(ngModel)]="searchString" (keyup)="filterResult($event)" placeHolder="Search" class="form-control" />
      </div>
      <div class="col-md-6" style="text-align:right">
-         <button type="button" class="btn btn-warning btn-sm">Disable</button>
-        <button type="button" class="btn btn-danger btn-sm">Add New</button>
+         <button type="button" class="btn btn-warning btn-sm">Disable</button>        
+        <a  routerLink="/customers/new" class="btn btn-danger btn-sm">Add New</a>
      </div>    
   </div>
 </div>

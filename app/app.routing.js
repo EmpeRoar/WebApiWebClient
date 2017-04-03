@@ -7,6 +7,7 @@ var menu_component_1 = require('./shared/menu/menu.component');
 var header_component_1 = require('./shared/header/header.component');
 var dashboard_component_1 = require('./dashboard/dashboard.component');
 var customer_component_1 = require('./customer/customer.component');
+var customerNew_component_1 = require('./customer/customerNew.component');
 var notfound_component_1 = require('./notfound/notfound.component');
 var appRoutes = [
     {
@@ -25,6 +26,11 @@ var appRoutes = [
     { path: 'customers', children: [
             { path: '', component: header_component_1.HeaderComponent, outlet: 'header' },
             { path: '', component: customer_component_1.CustomerComponent },
+            { path: '', component: menu_component_1.MenuComponent, outlet: 'menu' },
+        ] },
+    { path: 'customers/new', children: [
+            { path: '', component: header_component_1.HeaderComponent, outlet: 'header' },
+            { path: '', component: customerNew_component_1.CustomerNewComponent },
             { path: '', component: menu_component_1.MenuComponent, outlet: 'menu' },
         ] },
     { path: '404', component: notfound_component_1.NotFoundComponent },
